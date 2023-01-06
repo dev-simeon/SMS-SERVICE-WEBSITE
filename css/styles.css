@@ -1,0 +1,98 @@
+:root{
+    --green-color: #50b14a;
+    --dark-color: #333333;
+    --shade-of-dark: #3E3D3D;
+    --light-green-color: #e0f6e7;
+    --input-field-color: #f3f5fb;
+}
+
+body{
+    height: 100vh;
+    color: var(--dark-color);
+}
+
+.sidebar{
+    background-color: var(--dark-color);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+}
+
+h4{
+    font-size: 40px;
+}
+
+.card{
+    width: 300px;
+}
+
+.balance{
+    font-size: 20px;
+}
+
+.amount{
+    font-size: 30px;
+}
+
+.user{
+    background-color: var(--shade-of-dark);
+}
+
+.user-image{
+    width: 40px;
+}
+
+.main-content{
+    height: 100vh;
+    background-color: var(--input-field-color);
+    margin-left: 200px;
+}
+
+thead{
+    background-color: var(--light-green-color);
+}
+
+main.form-wrapper{
+    width: 300px;
+}
+
+.form-wrapper{
+    width: 600px;
+}
+
+h1>span{
+    color: var(--green-color);
+}
+
+input.form-control,
+.form-select,
+textarea.form-control{
+    background-color: var(--input-field-color);
+}
+
+.terms-condition{
+    font-size: 14px;
+}
+
+input[type=button],.btn.cta-btn{
+    background-color: var(--green-color);
+}
+
+
+
+/*********************************************** Mobile Design ***********************************************/
+
+@media screen and (max-width: 860px) {
+    .form-wrapper {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+       margin-left: 0px;
+    }
+}
