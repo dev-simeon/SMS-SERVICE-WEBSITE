@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <aside id="" class="sidebar p-3">
+    <aside id="" class="sidebar d-none d-md-block p-3">
         <div class="d-flex flex-column gap-4 h-100">
             <h3 class="fw-bold mb-0 d-flex flex-column text-center pb-4 border-bottom text-white">
                 SMS <span>SERVICE</span>
@@ -56,16 +56,79 @@
         
     </aside>
     <main class="main-content d-flex flex-column px-4 pt-4 gap-4">
-        <h4 class="fw-bold mb-0 text-dark">Dashboard</h4>
+        <div class="offcanvas offcanvas-nav offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header mt-3 ms-3">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body py-0">
+                <aside id="" class="p-3">
+                    <div class="d-flex flex-column gap-4 h-100">
+                        <h3 class="fw-bold mb-0 d-flex flex-column text-center pb-4 border-bottom text-white">
+                            SMS <span>SERVICE</span>
+                        </h3>
+                        <ul class="nav flex-column border-bottom gap-2 pb-5">
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" aria-current="page" href="dashboard.html">Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="#">Buy Credit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="send-sms-page.html">Send Message
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="#">Sent Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="#">Scheduled Messages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="#">My Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-0 py-0 text-white" href="#">SenderID Registration</a>
+                            </li>
+                        </ul>
+        
+                        <div class="d-flex align-items-center gap-2">
+                            <img class="img-fluid" src="images/fa_sign-out.svg" alt="">
+                            <a class="text-decoration-none text-white" href="login.html">Logout</a>
+                        </div>
+        
+                        <div class="d-flex align-items-center gap-2 p-2 user rounded">
+                            <img class="img-fluid user-image" src="images/Screenshot (103).png" alt="">
+                            <P class="mb-0 text-white">Daniel Foster</P>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <button class="btn border-0 d-block d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <img class="img-fluid" src="images/radix-icons_hamburger-menu.svg" alt="">
+            </button>
+            <h4 class="fw-bold mb-0 text-dark">Dashboard</h4>
+        </div>
 
-        <div class="card-wrapper d-flex gap-3">
-            <div class="d-flex flex-column gap-1 card border-0 p-3 shadow-sm">
-                <p class="mb-0 balance">unit balance</p>
+        <div class="card-wrapper d-flex flex-column flex-md-row gap-3">
+            <div class="d-flex flex-column gap-1 card-1 bg-white rounded-3 border-0 p-3 shadow-sm">
+                <div>
+                    <i class="bi bi-envelope fs-5"></i>
+                    <p class="mb-0 balance">unit balance</p>
+                </div>
                 <p class="mb-0 fw-bold amount">₦500</p>
             </div>
         
-            <div class="d-flex flex-column gap-1 card border-0 p-3 shadow-sm">
-                <p class="mb-0 balance">wallet balance</p>
+            <div class="d-flex flex-column gap-1 card-2 bg-white rounded-3 border-0 p-3 shadow-sm">
+                <div>
+                    <i class="bi bi-cash-coin fs-5"></i>
+                    <p class="mb-0 balance">wallet balance</p>
+                </div>
                 <p class="mb-0 fw-bold amount">₦500</p>
             </div>
         </div>
@@ -74,10 +137,10 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th class="table-data col-3">Sender ID</th>
-                        <th class="border-start table-data" style="min-width: 250px;">Message</th>
-                        <th class="border-start table-data">Dlvry Report</th>
-                        <th class="border-start table-data">Date & Time</th>
+                        <th class="table-data col-3 align-middle">Sender ID</th>
+                        <th class="border-start table-data align-middle" style="min-width: 250px;">Message</th>
+                        <th class="border-start table-data align-middle">Dlvry Report</th>
+                        <th class="border-start table-data align-middle">Date & Time</th>
                     </tr>
                 </thead>
                 <tbody>

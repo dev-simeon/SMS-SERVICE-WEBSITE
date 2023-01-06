@@ -21,11 +21,17 @@ body{
     height: 100vh;
 }
 
+.offcanvas.offcanvas-nav{
+    width: 40%;
+    background-color: var(--dark-color);
+}
+
 h4{
     font-size: 40px;
 }
 
-.card{
+.card-1,
+.card-2{
     width: 300px;
 }
 
@@ -60,16 +66,30 @@ main.form-wrapper{
 }
 
 .form-wrapper{
-    width: 600px;
+    width: 80%;
 }
 
 h1>span{
     color: var(--green-color);
 }
 
+.input-field{
+    width: 17rem;
+}
+
+input.form-control-sm:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
 input.form-control,
+input.form-control-sm,
 .form-select,
 textarea.form-control{
+    border: 0;
     background-color: var(--input-field-color);
 }
 
@@ -85,14 +105,55 @@ input[type=button],.btn.cta-btn{
 
 /*********************************************** Mobile Design ***********************************************/
 
-@media screen and (max-width: 860px) {
-    .form-wrapper {
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .main-content {
        margin-left: 0px;
     }
+
+    h4{
+        font-size: 30px;
+    }
+
+    .form-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .table-responsive{
+        width: 24rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+   .offcanvas.offcanvas-nav{
+        width: 60%;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-1,
+    .card-2{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .offcanvas.offcanvas-nav {
+        width: 80%;
+    }
+
+    .table-responsive {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 370px) {
+   .input-field{
+        width: auto;
+   }
 }
