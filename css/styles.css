@@ -97,6 +97,11 @@ textarea.form-control{
     font-size: 14px;
 }
 
+.icon{
+    font-size: 24px;
+    height: 30px;
+}
+
 input[type=button],.btn.cta-btn{
     background-color: var(--green-color);
 }
@@ -121,7 +126,7 @@ input[type=button],.btn.cta-btn{
 
 @media screen and (max-width: 630px) {
     .table-responsive{
-        width: 24rem;
+        width: 27rem;
     }
 }
 
